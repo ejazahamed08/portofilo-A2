@@ -1,9 +1,69 @@
 <!DOCTYPE html>
+<!-- The html tag tells the browser that this is an HTML document. The lang attribute sets the language to English. -->
 <html lang="en">
 <head>
-    <title>Document</title>
+    <!-- Meta tags provide information to the browser. This one ensures characters like symbols display correctly. -->
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures your website shrinks and expands to fit mobile phone screens properly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejaz Ahamed Khan - Portfolio</title>
+    
+    <!-- This links our HTML file to our CSS file so the browser knows where to find the styles. -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Hi
+
+    <!-- The header section usually contains introductory content like your name and title. -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>Ejaz Ahamed Khan</h1>
+            <p class="subtitle">Computer Science Student & Aspiring Software Engineer</p>
+        </div>
+    </header>
+
+    <!-- The main tag wraps the core content of your page. -->
+    <main class="container">
+
+        <!-- Sections divide your webpage into logical parts. -->
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>I am a first-year student at Newton School of Technology, Bangalore. I am passionate about programming and aspiring to become an engineer at Anthropic.</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Technical Skills</h2>
+            <!-- A bulleted list (unordered list) for your skills -->
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Scikit-Learn (sklearn)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Mario PyGame</h3>
+                <p>A classic platformer game clone built using Python and the PyGame library, featuring character movement, collision detection, and level design.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Get in Touch</h2>
+            <p>I am currently open to networking and learning opportunities.</p>
+            
+            <!-- Update the email address inside the href attribute here -->
+            <a href="mailto:ejazahamed08@gmail.com" class="button">Email Me</a>
+        </section>
+
+    </main>
+
+    <!-- The footer goes at the very bottom of the page. -->
+    <footer>
+        <p>&copy; 2026 Ejaz Ahamed Khan. Built from scratch with HTML & CSS.</p>
+    </footer>
+
 </body>
 </html>
